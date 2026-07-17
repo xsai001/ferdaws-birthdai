@@ -1,0 +1,1 @@
+body{margin:0;font-family:Arial;background:#fff0f6;text-align:center}#loading,#main,#message{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}#loading{background:linear-gradient(135deg,#fff0f6,#ffd9ea,#ffc2dc)}.heart{font-size:70px;animation:beat 1s infinite}#gift{font-size:100px;cursor:pointer}@keyframes beat{50%{transform:scale(1.2)}}
