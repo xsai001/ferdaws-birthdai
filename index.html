@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Ferdaws ❤️</title>
 
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<title>Happy Birthday Ferdaws ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
 </head>
 
 <body>
 
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
 <div id="loading">
-    <h1>🎀 Preparing your surprise...</h1>
+
+<div class="loader">
+
+<div class="heart">🤍</div>
+
+<h1>Preparing your surprise...</h1>
+
+<p>Made with Love ❤️</p>
+
 </div>
 
+</div>
+
+<div id="stars"></div>
+
 <div id="main">
+
+<!-- PAGE 1 -->
 
 <section class="page active">
 
@@ -27,58 +50,66 @@
 <h2>Ferdaws 🤍</h2>
 
 <p>
-I made something special just for you ❤️
+
+Today is all about you ❤️
+
+I made something special just for you.
+
 </p>
 
 <button id="startBtn">
+
 Open My Gift 🎁
+
 </button>
 
 </section>
+
+<!-- PAGE 2 -->
 
 <section class="page">
 
 <h1>💌 My Letter</h1>
 
-<p class="letter">
-
-بنتي الحبيبة 🤍<br><br>
-
-اليوم هو نهارك، وكنتمنا ليك حياة كلها سعادة.<br><br>
-
-شكراً لأنك ديماً معايا.<br><br>
-
-Happy Birthday My Princess ❤️<br><br>
-
-I Love You Forever.
-
-</p>
+<p id="typing" class="letter"></p>
 
 <button class="next">
+
 Next ➜
+
 </button>
 
 </section>
 
+<!-- PAGE 3 -->
+
 <section class="page">
 
-<h1>📸 Memories</h1>
+<h1>📸 Our Memories</h1>
 
 <div class="gallery">
 
 <img src="images/WhatsApp Image 2026-07-18 at 00.10.48.jpeg">
+
 <img src="images/WhatsApp Image 2026-07-18 at 00.10.48 (1).jpeg">
+
 <img src="images/WhatsApp Image 2026-07-18 at 00.10.48 (2).jpeg">
+
 <img src="images/WhatsApp Image 2026-07-18 at 00.10.48 (3).jpeg">
+
 <img src="images/WhatsApp Image 2026-07-18 at 00.10.48 (4).jpeg">
 
 </div>
 
 <button class="next">
+
 Next ➜
+
 </button>
 
 </section>
+
+<!-- PAGE 4 -->
 
 <section class="page">
 
@@ -86,33 +117,86 @@ Next ➜
 
 <p class="letter">
 
-أتمنى ليك تحقق جميع أحلامك.<br><br>
+I wish you endless happiness 🤍
 
-الله يخليك ليا ديماً ❤️
+May every dream come true.
+
+Thank you for making my life beautiful ❤️
 
 </p>
 
 <button class="next">
-Final Surprise 🎁
+
+One Last Surprise 🎁
+
 </button>
 
 </section>
 
-<section class="page">
+<!-- PAGE 5 -->
 
-<div class="gift">
-🎁
+<section class="page proposal">
+
+<h1>
+
+Will You Marry Me?
+
+</h1>
+
+<div class="ring">
+
+💍
+
 </div>
 
-<h1>Forever & Always ❤️</h1>
+<div class="buttons">
 
-<h2>Happy Birthday Ferdaws 🤍</h2>
+<button id="yesBtn">
+
+YES ❤️
+
+</button>
+
+<button id="noBtn">
+
+NO 😅
+
+</button>
+
+</div>
+
+</section>
+
+<!-- PAGE 6 -->
+
+<section class="page">
+
+<h1>
+
+❤️ YEEEEES ❤️
+
+</h1>
+
+<h2>
+
+I Love You Forever
+
+</h2>
+
+<p>
+
+Thank you for making my life beautiful.
+
+Forever & Always 🤍
+
+</p>
 
 </section>
 
 </div>
 
+</body>
+
 <script src="script.js"></script>
 
-</body>
 </html>
