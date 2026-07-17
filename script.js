@@ -1,1 +1,87 @@
-const msg=`بنتي الحبيبة 🤍، باباك كيبغيك بزاف. ما تتصوريش شحال أنا فرحان حيث نتي معايا. والله كنتمنا ليك عيد ميلاد زوين، وإن شاء الله المرة الجاية غادي نكونو مجموعين ونحتافلو كاملين. الله يخليك ليا يا حبيبة باباك، ويحفظك ويخليك ديما فرحانة. كنحبك بزاف بزاف. ❤️🎂`;window.onload=()=>setTimeout(()=>{loading.style.display='none';main.style.display='flex';},2000);gift.onclick=()=>{setTimeout(()=>{main.style.display='none';message.style.display='flex';let i=0;let t=setInterval(()=>{text.textContent+=msg[i]||'';i++;if(i>=msg.length)clearInterval(t);},35);},500)};
+const pages = document.querySelectorAll(".page");
+const nextBtns = document.querySelectorAll(".next");
+const startBtn = document.getElementById("startBtn");
+const loading = document.getElementById("loading");
+
+let current = 0;
+
+// Hide loading screen
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loading.style.display = "none";
+  }, 2500);
+});
+
+// Show a page
+function showPage(index) {
+  pages.forEach((page) => page.classList.remove("active"));
+  pages[index].classList.add("active");
+}
+
+// Start button
+startBtn.addEventListener("click", () => {
+  current = 1;
+  showPage(current);
+
+  // Play music (browser may require user interaction)
+  const music = document.getElementById("music");
+  if (music) {
+    music.play().catch(() => {});
+  }
+});
+
+// Next buttons
+nextBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    current++;
+
+    if (current >= pages.length) {
+      current = pages.length - 1;
+    }
+
+    showPage(current);
+
+    // Confetti on last page
+    if (
+      current === pages.length - 1 &&
+      typeof confetti !== "undefined"
+    ) {
+      confetti({
+        particleCount: 180,
+        spread: 120,
+        origin: { y: 0.6 }
+      });
+    }
+  });
+});
+
+// Floating hearts
+setInterval(() => {
+  const heart = document.createElement("div");
+
+  heart.innerHTML = ["🤍", "💕", "💖", "🌸", "💗"][
+    Math.floor(Math.random() * 5)
+  ];
+
+  heart.style.position = "fixed";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.bottom = "-40px";
+  heart.style.fontSize = Math.random() * 20 + 20 + "px";
+  heart.style.pointerEvents = "none";
+  heart.style.zIndex = "999";
+
+  document.body.appendChild(heart);
+
+  let pos = -40;
+
+  const move = setInterval(() => {
+    pos += 2;
+    heart.style.bottom = pos + "px";
+
+    if (pos > window.innerHeight + 50) {
+      clearInterval(move);
+      heart.remove();
+    }
+  }, 20);
+
+}, 700);
