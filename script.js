@@ -11,62 +11,66 @@ const noBtn = document.getElementById("noBtn");
 
 const letter = `
 
-بنتي الحبيبةconst letter = `
-
 💖 To My Princess 💖
 
-🤍 إلى أميرتي فردوس 🤍
+🤍 To My Beautiful Ferdaws 🤍
 
-اليوم ماشي غير عيد ميلادك...
-اليوم هو النهار اللي تزادت فيه أجمل إنسانة دخلات لحياتي، واللي بدلاتها للأحسن.
+Happy Birthday, My Love. 🎂❤️
 
-كل عام وأنتِ بخير يا روحي. ❤️
-كنتمنا من الله يحفظك، ويرزقك الصحة والسعادة، ويحقق ليك جميع أحلامك، وما تشوفي غير الخير فالطريق ديالك.
+Today is not just your birthday...
+Today is the day that the most beautiful girl in the world came into this life, and I'm so grateful that one day our paths crossed.
 
-بغيتك تعرفي بلي وجودك فحياتي هو أجمل هدية عطاهالي ربي، وكل نهار كنشكرو عليه.
+كل عام وأنتِ بخير يا روحي. 🤍
+كنتمنا من الله يحفظك، ويرزقك الصحة والسعادة، ويحقق ليك كل أمنية كتخبيها فقلبك.
 
-شكراً لأنك ديماً واقفة معايا، وكتشجعيني، وكتخليني نآمن براسي أكثر.
+بغيتك تعرفي بلي وجودك فحياتي هو أحسن حاجة وقعات ليا.
+من نهار عرفتك، حياتي تبدلات، وكل نهار كنلقى سبب جديد باش نبتسم.
 
-يمكن الكلمات ما توصفش شحال كنبغيك، ولكن قلبي كيقولها كل نهار بلا ما يهضر.
+Thank you for every smile you gave me.
+Thank you for every moment we shared.
+Thank you for being part of my life.
 
-You are not just my girlfriend...
-You are my best friend,
-my peace,
+كنبغيك بزاف، أكثر مما تقدر الكلمات توصف.
+وكل نهار كنكتاشف بلي حبي ليك كيكبر أكثر وأكثر.
+
+You're not only my girlfriend...
+You're my best friend,
 my happiness,
-and the most beautiful part of my life. ❤️
+my peace,
+my safe place,
+and the most beautiful chapter of my life. ❤️
 
-Whenever I look at you,
-I thank God for bringing someone as kind,
-beautiful and caring as you into my life.
+I promise I'll always stand by your side,
+support you,
+protect your smile,
+and love you with all my heart.
 
-I promise to stand by your side,
-to make you smile whenever you're sad,
-to support you in every dream,
-and to love you with all my heart.
+مهما وقع...
+غادي نبقى ديماً معاك،
+فالفرح قبل الحزن،
+وفكل خطوة غادي نكون حداك.
 
-No matter what happens...
-I'll always choose you. 🤍
-
-Happy Birthday My Princess 🎂👑❤️
+Happy Birthday My Princess 👑🎂❤️
 
 May Allah bless you,
 protect you,
-fill your life with happiness,
 and make all your dreams come true.
 
-Always remember...
-You are beautiful.
-You are amazing.
-You are strong.
-And you mean everything to me. ❤️
+Never forget...
+
+You are Beautiful. 🌹
+You are Amazing. ✨
+You are Strong. 💖
+And you will always be My Princess. 👑
 
 I Love You Today.
 I Love You Tomorrow.
 I Love You Forever & Always. 🤍❤️
 
 Forever Yours,
-Tamal ❤️
+❤️ Tamal ❤️
 
+`;
 `;
 
 `;
