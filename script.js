@@ -218,29 +218,37 @@ if(noBtn){
    YES BUTTON
 ========================== */
 
-if(yesBtn){
+/* ==========================
+   YES BUTTON
+========================== */
 
-    yesBtn.addEventListener("click",()=>{
+if (yesBtn) {
 
-        if(typeof confetti !== "undefined"){
+    yesBtn.addEventListener("click", () => {
+
+        current = pages.length - 1;
+
+        showPage(current);
+
+        finalCelebration();
+
+        if (typeof confetti !== "undefined") {
 
             confetti({
 
-                particleCount:350,
+                particleCount: 500,
 
-                spread:180,
+                spread: 360,
 
-                startVelocity:45,
+                startVelocity: 55,
 
-                origin:{y:.6}
+                ticks: 350,
+
+                origin: { y: 0.55 }
 
             });
 
         }
-
-        current = pages.length-1;
-
-        showPage(current);
 
     });
 
