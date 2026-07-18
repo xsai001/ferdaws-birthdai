@@ -218,10 +218,6 @@ if(noBtn){
    YES BUTTON
 ========================== */
 
-/* ==========================
-   YES BUTTON
-========================== */
-
 if (yesBtn) {
 
     yesBtn.addEventListener("click", () => {
