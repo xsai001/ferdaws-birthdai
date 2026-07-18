@@ -21,29 +21,26 @@ Today is not just your birthday...
 Today is the day that the most beautiful girl in the world came into this life, and I'm so grateful that one day our paths crossed.
 
 كل عام وأنتِ بخير يا روحي. 🤍
-كنتمنا من الله يحفظك، ويرزقك الصحة والسعادة، ويحقق ليك كل أمنية كتخبيها فقلبك.
 
-بغيتك تعرفي بلي وجودك فحياتي هو أحسن حاجة وقعات ليا.
+كنتمنا من الله يحفظك، ويطول فعمرك، ويرزقك الصحة والسعادة، ويحقق ليك جميع أحلامك، وما تشوفي غير الخير.
+
+بغيتك تعرفي بلي وجودك فحياتي هو أجمل حاجة وقعات ليا.
+
 من نهار عرفتك، حياتي تبدلات، وكل نهار كنلقى سبب جديد باش نبتسم.
 
-Thank you for every smile you gave me.
-Thank you for every moment we shared.
-Thank you for being part of my life.
+شكراً لأنك ديماً معايا، وكتخليني نكون أحسن نسخة من راسي.
 
-كنبغيك بزاف، أكثر مما تقدر الكلمات توصف.
-وكل نهار كنكتاشف بلي حبي ليك كيكبر أكثر وأكثر.
+You are not only my girlfriend...
+You are my best friend.
+You are my happiness.
+You are my peace.
+You are my safe place.
+And you are the most beautiful part of my life. ❤️
 
-You're not only my girlfriend...
-You're my best friend,
-my happiness,
-my peace,
-my safe place,
-and the most beautiful chapter of my life. ❤️
-
-I promise I'll always stand by your side,
-support you,
-protect your smile,
-and love you with all my heart.
+I promise to always stand by your side,
+to support you,
+to protect your smile,
+and to love you with all my heart.
 
 مهما وقع...
 غادي نبقى ديماً معاك،
@@ -56,22 +53,20 @@ May Allah bless you,
 protect you,
 and make all your dreams come true.
 
-Never forget...
+Always remember...
 
 You are Beautiful. 🌹
 You are Amazing. ✨
 You are Strong. 💖
-And you will always be My Princess. 👑
+You are My Princess. 👑
 
 I Love You Today.
 I Love You Tomorrow.
 I Love You Forever & Always. 🤍❤️
 
 Forever Yours,
-❤️ Tamal ❤️
 
-`;
-`;
+❤️ Tamal ❤️
 
 `;
 
@@ -87,9 +82,7 @@ window.addEventListener("load", () => {
 
 /* Show Pages */
 function showPage(index) {
-
     pages.forEach(page => page.classList.remove("active"));
-
     pages[index].classList.add("active");
 
     if (index === 1) {
@@ -98,66 +91,47 @@ function showPage(index) {
 }
 
 /* Start */
-
 startBtn.addEventListener("click", () => {
-
     current = 1;
-
     showPage(current);
 
-    music.volume = 0.5;
-
-    music.play().catch(() => {});
-
+    if (music) {
+        music.volume = 0.5;
+        music.play().catch(() => {});
+    }
 });
 
 /* Next */
-
 nextBtns.forEach(btn => {
-
     btn.addEventListener("click", () => {
-
-        if (current < pages.length - 2) {
-
+        if (current < pages.length - 1) {
             current++;
-
             showPage(current);
-
         }
-
     });
-
 });
 
 /* Typing */
-
 function typeLetter() {
-
     if (typed) return;
 
     typed = true;
-
     let i = 0;
 
     const timer = setInterval(() => {
-
         typing.innerHTML += letter.charAt(i);
-
         i++;
 
         if (i >= letter.length) {
-
             clearInterval(timer);
-
         }
-
-    }, 40);
-
+    }, 35);
 }
+/* ==========================
+   FLOATING HEARTS
+========================== */
 
-/* Hearts */
-
-const hearts = ["🤍","❤️","💕","💖","🌸"];
+const hearts = ["🤍","❤️","💕","💖","💘","🌸"];
 
 setInterval(() => {
 
@@ -167,93 +141,121 @@ setInterval(() => {
 
     heart.innerHTML = hearts[Math.floor(Math.random()*hearts.length)];
 
-    heart.style.left = Math.random()*100+"vw";
+    heart.style.left = Math.random()*100 + "vw";
 
-    heart.style.fontSize = (20+Math.random()*20)+"px";
+    heart.style.fontSize = (20 + Math.random()*20) + "px";
 
-    heart.style.animationDuration = (5+Math.random()*3)+"s";
+    heart.style.animationDuration = (5 + Math.random()*3) + "s";
 
     document.body.appendChild(heart);
 
-    setTimeout(()=>heart.remove(),8000);
+    setTimeout(() => {
+        heart.remove();
+    },8000);
 
 },500);
 
-/* Lightbox */
 
-const imgs = document.querySelectorAll(".gallery img");
+/* ==========================
+   GALLERY LIGHTBOX
+========================== */
+
+const gallery = document.querySelectorAll(".gallery img");
 
 const lightbox = document.createElement("div");
 
 lightbox.className = "lightbox";
 
-const big = document.createElement("img");
+const lightImg = document.createElement("img");
 
-lightbox.appendChild(big);
+lightbox.appendChild(lightImg);
 
 document.body.appendChild(lightbox);
 
-imgs.forEach(img=>{
+gallery.forEach(img=>{
 
-    img.onclick=()=>{
+    img.addEventListener("click",()=>{
 
-        big.src=img.src;
+        lightImg.src = img.src;
 
-        lightbox.style.display="flex";
-
-    }
-
-});
-
-lightbox.onclick=()=>{
-
-    lightbox.style.display="none";
-
-}
-
-/* NO Button */
-
-noBtn.addEventListener("mouseover",()=>{
-
-    const x=Math.random()*(window.innerWidth-150);
-
-    const y=Math.random()*(window.innerHeight-80);
-
-    noBtn.style.position="fixed";
-
-    noBtn.style.left=x+"px";
-
-    noBtn.style.top=y+"px";
-
-});
-
-/* YES Button */
-
-yesBtn.addEventListener("click",()=>{
-
-    confetti({
-
-        particleCount:400,
-
-        spread:180,
-
-        origin:{y:.6}
+        lightbox.style.display = "flex";
 
     });
 
-    current=5;
+});
 
-    showPage(current);
+lightbox.addEventListener("click",()=>{
+
+    lightbox.style.display = "none";
 
 });
 
-/* Keyboard */
+
+/* ==========================
+   NO BUTTON
+========================== */
+
+if(noBtn){
+
+    noBtn.addEventListener("mouseover",()=>{
+
+        const x = Math.random()*(window.innerWidth-150);
+
+        const y = Math.random()*(window.innerHeight-80);
+
+        noBtn.style.position="fixed";
+
+        noBtn.style.left=x+"px";
+
+        noBtn.style.top=y+"px";
+
+    });
+
+}
+
+
+/* ==========================
+   YES BUTTON
+========================== */
+
+if(yesBtn){
+
+    yesBtn.addEventListener("click",()=>{
+
+        if(typeof confetti !== "undefined"){
+
+            confetti({
+
+                particleCount:350,
+
+                spread:180,
+
+                startVelocity:45,
+
+                origin:{y:.6}
+
+            });
+
+        }
+
+        current = pages.length-1;
+
+        showPage(current);
+
+    });
+
+}
+
+
+/* ==========================
+   KEYBOARD
+========================== */
 
 document.addEventListener("keydown",(e)=>{
 
     if(e.key==="ArrowRight"){
 
-        if(current<pages.length-2){
+        if(current<pages.length-1){
 
             current++;
 
@@ -277,4 +279,150 @@ document.addEventListener("keydown",(e)=>{
 
 });
 
-console.log("Happy Birthday ❤️");
+
+/* ==========================
+   BUTTON EFFECT
+========================== */
+
+document.querySelectorAll("button").forEach(btn=>{
+
+    btn.addEventListener("click",()=>{
+
+        btn.animate([
+
+            {transform:"scale(1)"},
+
+            {transform:"scale(.92)"},
+
+            {transform:"scale(1.08)"},
+
+            {transform:"scale(1)"}
+
+        ],{
+
+            duration:300
+
+        });
+
+    });
+
+});
+
+
+console.log("❤️ Happy Birthday Ferdaws ❤️");
+/* ==========================
+   FINAL CELEBRATION
+========================== */
+
+function finalCelebration() {
+
+    if (typeof confetti === "undefined") return;
+
+    const end = Date.now() + 5000;
+
+    const timer = setInterval(() => {
+
+        if (Date.now() > end) {
+            clearInterval(timer);
+            return;
+        }
+
+        confetti({
+            particleCount: 8,
+            angle: 60,
+            spread: 60,
+            origin: { x: 0 }
+        });
+
+        confetti({
+            particleCount: 8,
+            angle: 120,
+            spread: 60,
+            origin: { x: 1 }
+        });
+
+    }, 200);
+
+}
+
+/* ==========================
+   EXTRA CONFETTI
+========================== */
+
+if (yesBtn) {
+
+    yesBtn.addEventListener("click", () => {
+
+        finalCelebration();
+
+        setTimeout(() => {
+
+            if (typeof confetti !== "undefined") {
+
+                confetti({
+
+                    particleCount: 500,
+
+                    spread: 360,
+
+                    startVelocity: 55,
+
+                    ticks: 350,
+
+                    origin: { y: 0.55 }
+
+                });
+
+            }
+
+        }, 800);
+
+    });
+
+}
+
+/* ==========================
+   REPLAY BUTTON
+========================== */
+
+const lastPage = pages[pages.length - 1];
+
+if (lastPage) {
+
+    const replay = document.createElement("button");
+
+    replay.innerHTML = "🔄 Replay";
+
+    replay.style.marginTop = "30px";
+
+    replay.onclick = () => {
+
+        current = 0;
+
+        typed = false;
+
+        typing.innerHTML = "";
+
+        showPage(0);
+
+    };
+
+    lastPage.appendChild(replay);
+
+}
+
+/* ==========================
+   PAGE ANIMATION
+========================== */
+
+pages.forEach(page => {
+
+    page.style.transition = "all .6s ease";
+
+});
+
+/* ==========================
+   FINISH
+========================== */
+
+console.log("🎉 Premium Version Loaded ❤️");
