@@ -349,11 +349,7 @@ function finalCelebration() {
    EXTRA CONFETTI
 ========================== */
 
-if (yesBtn) {
 
-    yesBtn.addEventListener("click", () => {
-
-        finalCelebration();
 
         setTimeout(() => {
 
