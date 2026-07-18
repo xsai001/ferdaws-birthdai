@@ -11,15 +11,63 @@ const noBtn = document.getElementById("noBtn");
 
 const letter = `
 
-بنتي الحبيبة 🤍
+بنتي الحبيبةconst letter = `
 
-Happy Birthday My Princess ❤️
+💖 To My Princess 💖
 
-كنتمنا ليك الصحة والسعادة وتحقيق جميع أحلامك.
+🤍 إلى أميرتي فردوس 🤍
 
-شكراً لأنك ديماً معايا.
+اليوم ماشي غير عيد ميلادك...
+اليوم هو النهار اللي تزادت فيه أجمل إنسانة دخلات لحياتي، واللي بدلاتها للأحسن.
 
-I Love You Forever ❤️
+كل عام وأنتِ بخير يا روحي. ❤️
+كنتمنا من الله يحفظك، ويرزقك الصحة والسعادة، ويحقق ليك جميع أحلامك، وما تشوفي غير الخير فالطريق ديالك.
+
+بغيتك تعرفي بلي وجودك فحياتي هو أجمل هدية عطاهالي ربي، وكل نهار كنشكرو عليه.
+
+شكراً لأنك ديماً واقفة معايا، وكتشجعيني، وكتخليني نآمن براسي أكثر.
+
+يمكن الكلمات ما توصفش شحال كنبغيك، ولكن قلبي كيقولها كل نهار بلا ما يهضر.
+
+You are not just my girlfriend...
+You are my best friend,
+my peace,
+my happiness,
+and the most beautiful part of my life. ❤️
+
+Whenever I look at you,
+I thank God for bringing someone as kind,
+beautiful and caring as you into my life.
+
+I promise to stand by your side,
+to make you smile whenever you're sad,
+to support you in every dream,
+and to love you with all my heart.
+
+No matter what happens...
+I'll always choose you. 🤍
+
+Happy Birthday My Princess 🎂👑❤️
+
+May Allah bless you,
+protect you,
+fill your life with happiness,
+and make all your dreams come true.
+
+Always remember...
+You are beautiful.
+You are amazing.
+You are strong.
+And you mean everything to me. ❤️
+
+I Love You Today.
+I Love You Tomorrow.
+I Love You Forever & Always. 🤍❤️
+
+Forever Yours,
+Tamal ❤️
+
+`;
 
 `;
 
