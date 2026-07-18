@@ -344,12 +344,15 @@ function finalCelebration() {
     }, 200);
 
 }
-
 /* ==========================
    EXTRA CONFETTI
 ========================== */
 
+if (yesBtn) {
 
+    yesBtn.addEventListener("click", () => {
+
+        finalCelebration();
 
         setTimeout(() => {
 
